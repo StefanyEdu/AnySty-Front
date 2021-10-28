@@ -6,7 +6,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { CepListComponent } from './cep-list/cep-list.component';
-import { HomePageComponent } from './home-page/home-page.component';
+import { HomePageComponent } from './home/home-page.component';
 import { CepComponent } from './cep/cep.component';
 
 @NgModule({
@@ -15,19 +15,17 @@ import { CepComponent } from './cep/cep.component';
     ReactiveFormsModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
-      { path: 'list', component: CepListComponent},
+      { path: 'list', component: CepListComponent },
       { path: 'ceps/:numeroCep', component: CepComponent },
-    ])
+    ]),
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
     CepListComponent,
     HomePageComponent,
-    CepComponent
+    CepComponent,
   ],
-  bootstrap: [
-    AppComponent
-  ]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
