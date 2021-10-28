@@ -2,14 +2,3 @@ p {
   font-family: 'Courier New', Courier, monospace;
   font-size: 14px;
 }
-/*Rodape*/
-#container-rodape {
-  background: white;
-  padding: 20px;
-}
-
-#rodape {
-  width: 750px;
-  margin: 0 auto;
-  color: black;
-}
