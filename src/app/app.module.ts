@@ -1,13 +1,33 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { CepListComponent } from './cep-list/cep-list.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { CepComponent } from './cep/cep.component';
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent ],
-  bootstrap:    [ AppComponent ]
+  imports: [
+    BrowserModule,
+    ReactiveFormsModule,
+    RouterModule.forRoot([
+      { path: '', component: HomePageComponent },
+      { path: 'list', component: CepListComponent},
+      { path: 'ceps/:numeroCep', component: CepComponent },
+    ])
+  ],
+  declarations: [
+    AppComponent,
+    TopBarComponent,
+    CepListComponent,
+    HomePageComponent,
+    CepComponent
+  ],
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
