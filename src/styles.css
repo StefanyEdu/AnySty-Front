@@ -22,12 +22,16 @@ router-outlet + *  {
 /* Text */
 
 h1 {
-  font-size: 32px;
+  font-size: 40px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
 
 }
 
 h2 {
   font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  color: black;
 }
 
 h1, h2 {
@@ -76,7 +80,7 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color:#c994ff;
+  background-color:white;
   color: white;
   border: none;
 }
@@ -108,7 +112,7 @@ label {
 app-top-bar {
   width: 100%;
   height: 68px;
-  background-color: #1976d2;
+  background-color: #c994ff;
   padding: 16px;
   display: flex;
   flex-direction: row;
