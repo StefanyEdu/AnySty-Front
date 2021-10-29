@@ -10,11 +10,7 @@ import { Cep, ceps } from '../ceps';
 export class HomePageComponent implements OnInit {
   cep: Cep | undefined;
 
- //getCep(cep: string) {
-    //const routeParams = this.route.snapshot.paramMap;
-    //const numeroCepFromRoute = String(routeParams.get('numeroCep'));
-    //this.cep = ceps.find((cep) => cep.cep === numeroCepFromRoute);
- // }
+ 
     getCep(cep:string) {
       this.router.navigate(['ceps', cep]);    
     }
