@@ -23,6 +23,7 @@ router-outlet + *  {
 
 h1 {
   font-size: 32px;
+
 }
 
 h2 {
@@ -75,7 +76,7 @@ label {
   border-radius: 2px;
   font-size: 14px;
   cursor: pointer;
-  background-color: #1976d2;
+  background-color:#c994ff;
   color: white;
   border: none;
 }
@@ -137,12 +138,13 @@ app-top-bar h1 {
 
 /*Rodape*/
 #container-rodape {
-  background: white;
-  padding: 20px;
+  background: blue;
+  padding: 100px;
 }
 
 #rodape {
   width: 750px;
   margin: 0 auto;
   color: black;
+  position: center;
 }

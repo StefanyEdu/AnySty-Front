@@ -10,7 +10,7 @@ export interface Cep {
 export const ceps = [
   {
     id: 1,
-    cep: '94250554',
+    cep: '91250554',
     logradouro: 'Rua Paulo Remato Ketzer de Souza',
     complemento: '',
     bairro: 'Rubem Berta',
@@ -19,7 +19,7 @@ export const ceps = [
   },
   {
     id: 2,
-    cep: '90040-191',
+    cep: '90040191',
     logradouro: 'Av. Venâncio Aires',
     complemento: '',
     bairro: 'Cidade Baixa',
