@@ -21,6 +21,7 @@ export class CepComponent implements OnInit {
     // Find the product that correspond with the id provided in route.
     //this.cep = ceps.find((cep) => cep.cep === numeroCepFromRoute);
     this.viacep.getCep(numeroCepFromRoute).subscribe(
-      (cep) => (this.cep = cep));
+      cep => this.cep = cep
+      );
   }
 }
