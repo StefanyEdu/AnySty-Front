@@ -4,7 +4,7 @@ export interface Cep {
   logradouro: string;
   complemento: string;
   bairro: string;
-  cidade: string;
+  localidade: string;
   uf: string;
 }
 export const ceps = [
@@ -14,7 +14,7 @@ export const ceps = [
     logradouro: 'Rua Paulo Remato Ketzer de Souza',
     complemento: 'Apartamentos',
     bairro: 'Rubem Berta',
-    cidade: 'Porto Alegre',
+    localidade: 'Porto Alegre',
     uf: 'RS',
   },
   {
@@ -23,7 +23,7 @@ export const ceps = [
     logradouro: 'Av. Venâncio Aires',
     complemento: '',
     bairro: 'Cidade Baixa',
-    cidade: 'Porto Alegre',
+    localidade: 'Porto Alegre',
     uf: 'RS',
   },
   {
@@ -32,7 +32,7 @@ export const ceps = [
     logradouro: 'Rua: Manoel Bernardes',
     complemento: '',
     bairro: 'Intersul',
-    cidade: 'Alvorada',
+    localidade: 'Alvorada',
     uf: 'RS',
   },
   {
