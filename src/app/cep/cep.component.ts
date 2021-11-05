@@ -18,7 +18,7 @@ export class CepComponent implements OnInit {
     const routeParams = this.route.snapshot.paramMap;
     const numeroCepFromRoute = String(routeParams.get('numeroCep'));
 
-    // Find the product that correspond with the id provided in route.
+    
     //this.cep = ceps.find((cep) => cep.cep === numeroCepFromRoute);
     this.viacep.getCep(numeroCepFromRoute).subscribe(
       cep => this.cep = cep
