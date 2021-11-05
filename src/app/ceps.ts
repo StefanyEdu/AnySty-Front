@@ -12,7 +12,7 @@ export const ceps = [
     id: 1,
     cep: '91250554',
     logradouro: 'Rua Paulo Remato Ketzer de Souza',
-    complemento: '',
+    complemento: 'Apartamentos',
     bairro: 'Rubem Berta',
     cidade: 'Porto Alegre',
     uf: 'RS',
