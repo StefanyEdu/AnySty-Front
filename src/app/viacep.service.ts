@@ -6,5 +6,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ViacepService {
-  constructor() {}
+  constructor(private http:HttpClient){}
+
+
 }
