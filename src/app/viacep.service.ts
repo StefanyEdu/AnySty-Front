@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
+import { Cep } from './ceps';
+import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn:'root'
+  providedIn: 'root',
 })
 export class ViacepService {
-
-  constructor() { }
-
+  constructor() {}
 }
