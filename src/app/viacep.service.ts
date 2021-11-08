@@ -11,7 +11,8 @@ export class ViacepService {
   }
 
   getCep( cep:string){
-   return this.http.get<Cep>('https://viacep.com.br/ws/'+cep+'/json/');
+   /*return this.http.get<Cep>('https://viacep.com.br/ws/'+cep+'/json/');*/
+   return this.http.get<Cep>('https://boiling-inlet-94899.herokuapp.com/'+cep);
   }
 
 
