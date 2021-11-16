@@ -5,9 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { CepListComponent } from './cep-list/cep-list.component';
+import { ListComponent } from './cep-list/cep-list.component';
 import { HomePageComponent } from './home/home-page.component';
-import { CepComponent } from './cep/cep.component';
+import{Ofertas} from './ofertas/OfertasComponent'
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -17,8 +17,8 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     RouterModule.forRoot([
       { path: '', component: HomePageComponent },
-      { path: 'list', component: CepListComponent },
-      { path: 'ceps/:numeroCep', component: CepComponent },
+      { path: 'list', component: ListComponent },
+      { path: 'imoveis/:cidadeOf', component: OfertasComponent },
     ]),
   ],
   declarations: [
@@ -26,7 +26,7 @@ import { HttpClientModule } from '@angular/common/http';
     TopBarComponent,
     CepListComponent,
     HomePageComponent,
-    CepComponent,
+    Ofertas
   ],
   bootstrap: [AppComponent],
 })
