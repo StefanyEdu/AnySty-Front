@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Imovel } from '../imoveis';
 import { Imovel } from './imoveis';
 
 @Component({
@@ -8,10 +9,10 @@ import { Imovel } from './imoveis';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent implements OnInit {
-  oferta: Oferta[] | undefined;
+  imoveis: Imovel[] | undefined;
 
   getImovel(oferta: string) {
-    this.router.navigate(['imoveis', oferta]);
+    this.router.navigate(['imoveis', Imovel]);
   }
 
   constructor(private router: Router) {}

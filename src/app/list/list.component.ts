@@ -10,6 +10,6 @@ export class CepListComponent {
   imoveis = imoveis;
 
   share() {
-    window.alert('Cep Cadastrado!');
+    window.alert('Cidade Cadastrado!');
   }
 }
