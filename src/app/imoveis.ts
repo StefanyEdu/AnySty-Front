@@ -8,6 +8,7 @@ export interface Imovel {
   quantquartos: string;
   dataInicio: string;
   dataFim: string;
+  numPessoas: string;
 }
 export const imoveis = [
   {
@@ -20,6 +21,7 @@ export const imoveis = [
     quantquartos: '2',
     dataInicio: '',
     dataFim: '',
+    numPessoas: '',
   },
   {
     id: 2,
@@ -31,6 +33,7 @@ export const imoveis = [
     quantquartos: '1',
     dataInicio: '',
     dataFim: '',
+    numPessoas: '',
   },
   {
     id: 3,
@@ -42,6 +45,7 @@ export const imoveis = [
     quantquartos: '3',
     dataInicio: '',
     dataFim: '',
+    numPessoas: '',
   },
   {
     id: 2,
@@ -53,5 +57,6 @@ export const imoveis = [
     quantquartos: '2',
     dataInicio: '',
     dataFim: '',
+    numPessoas: '',
   },
 ];

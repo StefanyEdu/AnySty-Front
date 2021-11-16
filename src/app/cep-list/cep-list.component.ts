@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-import { ceps } from '../ceps';
+import { Imovel } from './imoveis';
 
 @Component({
   selector: 'app-cep-list',

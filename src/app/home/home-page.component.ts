@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Cep, ceps } from '../ceps';
+import { Imovel } from './imoveis';
 
 @Component({
   selector: 'app-home-page',
@@ -8,15 +8,12 @@ import { Cep, ceps } from '../ceps';
   styleUrls: ['./home-page.component.css'],
 })
 export class HomePageComponent implements OnInit {
-  cep: Cep | undefined;
+  oferta: Oferta[] | undefined;
 
- 
-    getCep(cep:string) {
-      this.router.navigate(['ceps', cep]);    
-    }
-  
+  getImovel(oferta: string) {
+    this.router.navigate(['imoveis', oferta]);
+  }
 
-  
   constructor(private router: Router) {}
 
   ngOnInit() {}
