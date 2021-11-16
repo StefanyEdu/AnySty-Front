@@ -14,11 +14,12 @@ export const imoveis = [
     id: 1,
     cidade: 'Porto Alegre',
     imovel: 'Apartamento',
+    preco: '100',
     disponibilidade: 'Dezembro a Janeiro',
     uf: 'Rio Grande do Sul',
     quantquartos: '2',
-    dataInicio: "",
-    dataFim: ""
+    dataInicio: '',
+    dataFim: '',
   },
   {
     id: 2,
@@ -28,6 +29,8 @@ export const imoveis = [
     disponibilidade: 'Dezembro a Janeiro',
     uf: 'Rio Grande do Sul',
     quantquartos: '1',
+    dataInicio: '',
+    dataFim: '',
   },
   {
     id: 3,
@@ -37,6 +40,8 @@ export const imoveis = [
     disponibilidade: 'Dezembro a Fevereiro',
     uf: 'Rio Grande do Sul',
     quantquartos: '3',
+    dataInicio: '',
+    dataFim: '',
   },
   {
     id: 2,
@@ -46,5 +51,7 @@ export const imoveis = [
     disponibilidade: 'Dezembro a Janeiro',
     uf: 'Santa Catarina',
     quantquartos: '2',
+    dataInicio: '',
+    dataFim: '',
   },
 ];

@@ -1,8 +1,25 @@
-<h2>Detalhes do CEP</h2>
+<h2>
+  Ofertas
 
-<div *ngIf="cep">
-  <h3>{{ cep.cep }}</h3>
-  <h4>{{ cep.logradouro }}</h4>
-  <p>{{ cep.localidade }}</p>
-  <p>{{ cep.uf }}</p>
-</div>
+  <div *ngIf="imoveis">
+    <h3>{{ imoveis.imovel }}</h3>
+    <h4>{{ imoveis.preco }}</h4>
+    <p>{{ imoveis.disponibilidade }}</p>
+    <p>{{ imoveis.uf }}</p>
+    <p>{{ imoveis.quantquartos }}</p>
+    <p>{{ imoveis.dataInicio }}</p>
+    <p>{{ imoveis.dataFim }}</p>
+  </div>
+</h2>
+
+<h2>
+  <div *ngIf="imoveis">
+    <h3>{{ imoveis.imovel }}</h3>
+    <h4>{{ imoveis.preco }}</h4>
+    <p>{{ imoveis.disponibilidade }}</p>
+    <p>{{ imoveis.uf }}</p>
+    <p>{{ imoveis.quantquartos }}</p>
+    <p>{{ imoveis.dataInicio }}</p>
+    <p>{{ imoveis.dataFim }}</p>
+  </div>
+</h2>
