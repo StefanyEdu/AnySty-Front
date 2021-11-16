@@ -1,14 +1,13 @@
 import { Component } from '@angular/core';
-
-import { Imovel } from './imoveis';
+import { imoveis } from '../imoveis';
 
 @Component({
-  selector: 'app-cep-list',
-  templateUrl: './cep-list.component.html',
-  styleUrls: ['./cep-list.component.css'],
+  selector: 'app-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./ist.component.css'],
 })
 export class CepListComponent {
-  ceps = ceps;
+  imoveis = imoveis;
 
   share() {
     window.alert('Cep Cadastrado!');
