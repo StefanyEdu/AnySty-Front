@@ -164,3 +164,12 @@ footer {
   margin: 0 auto;
   color: black;
 }
+squat {
+  width: 150;
+  margin-left: 60px;
+  font-family: 'Amasis MT Pro Black', Times, serif;
+  margin-top: 10px;
+  float: left;
+  display: inline-block;
+}
+

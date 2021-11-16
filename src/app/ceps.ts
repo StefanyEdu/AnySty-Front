@@ -1,47 +1,49 @@
-export interface Cep {
+export interface Imovel {
   id: number;
-  cep: string;
-  logradouro: string;
-  complemento: string;
-  bairro: string;
-  localidade: string;
+  cidade: string;
+  imovel: string;
+  preco: string;
+  disponibilidade: string;
   uf: string;
+  quantquartos: string;
+  dataInicio: string;
+  dataFim: string;
 }
-export const ceps = [
+export const imoveis = [
   {
     id: 1,
-    cep: '91250554',
-    logradouro: 'Rua Paulo Remato Ketzer de Souza',
-    complemento: 'Apartamentos',
-    bairro: 'Rubem Berta',
-    localidade: 'Porto Alegre',
-    uf: 'RS',
+    cidade: 'Porto Alegre',
+    imovel: 'Apartamento',
+    preco: '100.00',
+    disponibilidade: 'Dezembro a Janeiro',
+    uf: 'Rio Grande do Sul',
+    quantquartos: '2',
   },
   {
     id: 2,
-    cep: '90040191',
-    logradouro: 'Av. Venâncio Aires',
-    complemento: '',
-    bairro: 'Cidade Baixa',
-    localidade: 'Porto Alegre',
-    uf: 'RS',
+    cidade: 'Porto Alegre',
+    imovel: 'Casa',
+    preco: '150.00',
+    disponibilidade: 'Dezembro a Janeiro',
+    uf: 'Rio Grande do Sul',
+    quantquartos: '1',
   },
   {
     id: 3,
-    cep: '94853310',
-    logradouro: 'Rua: Manoel Bernardes',
-    complemento: '',
-    bairro: 'Intersul',
-    localidade: 'Alvorada',
-    uf: 'RS',
+    cidade: 'Porto Alegre',
+    imovel: 'Apartamento',
+    preco: '100.00',
+    disponibilidade: 'Dezembro a Fevereiro',
+    uf: 'Rio Grande do Sul',
+    quantquartos: '3',
   },
   {
-    id: 4,
-    cep: '90620001',
-    logradouro: 'Av. Princesa Isabel',
-    complemento: '',
-    bairro: 'Azenha',
-    cidade: 'Porto Alegre',
-    uf: 'RS',
+    id: 2,
+    cidade: 'Florianopolis',
+    imovel: 'Casa',
+    preco: '150.00',
+    disponibilidade: 'Dezembro a Janeiro',
+    uf: 'Rio Grande do Sul',
+    quantquartos: '2',
   },
 ];
