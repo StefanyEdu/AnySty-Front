@@ -1,13 +1,19 @@
-<h1>Bem vindo!</h1>
-<h2>Hospedagem AnySty</h2>
+<h1>Bem-vindo!</h1>
+
 
 <div class="busca">
-  <form [formGroup]="pesquisaForm"(ngSubmit) ="onSubmit"> 
+  <form [formGroup]="pesquisaForm" (ngSubmit)="(onSubmit)">
     <div class="squat">
       <label class="busca_cidade">
         Localização:<br />
         Para onde você vai?<br />
-        <input type="text" id="cidade" name="cidade" #cidade formControlName='cidade'/>
+        <input
+          type="text"
+          id="cidade"
+          name="cidade"
+          #cidade
+          formControlName="cidade"
+        />
       </label>
     </div>
 
@@ -15,18 +21,38 @@
       <label class="busca_cidade"
         >Check-in<br />
         Quando?<br />
-        <input type="date" id="dataInicio" name="dataInicio" #dataInicio formControlName='dataInicio'/>
+        <input
+          type="date"
+          id="dataInicio"
+          name="dataInicio"
+          #dataInicio
+          formControlName="dataInicio"
+        />
       </label>
     </div>
     <div class="squat">
       <label class="busca_cidade"
         >Checkout<br />
         Quando?<br />
-        <input type="date" id="dataFim" name="dataFim" #dataFim formControlName='dataFim'/>
+        <input
+          type="date"
+          id="dataFim"
+          name="dataFim"
+          #dataFim
+          formControlName="dataFim"
+        />
       </label>
     </div>
-
-    <input type="text" id="numPessoas" name="numPessoas" #numPessoas formControlName='numPessoas'/>
-    <button type="submit" >Buscar</button>
+    <label>
+      Informe quantas Pessoas: <br />
+      <input
+        type="text"
+        id="numPessoas"
+        name="numPessoas"
+        #numPessoas
+        formControlName="numPessoas"
+      />
+    </label>
+    <button type="submit">Buscar</button>
   </form>
 </div>

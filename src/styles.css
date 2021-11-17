@@ -37,7 +37,7 @@ h1,
 h2 {
   font-family:"Amasis MT Pro Black";
   font-weight: lighter;
-  font-size: 20px;
+  font-size: 26px;
   color: #4124e3;
 }
 
@@ -175,4 +175,8 @@ squat {
   float: left;
   display: inline-block;
 }
-
+p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;;
+  color: black;
+}
