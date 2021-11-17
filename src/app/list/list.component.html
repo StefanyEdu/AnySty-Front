@@ -1,13 +1,17 @@
 <h2>Lista de imoveis</h2>
 
-<!--<div *ngFor="let imovel of imoveis">
-  <h3>
-    <a [routerLink]="['/im', cep.cep]" [title]="cep.cidade + ' - ' + cep.uf">
-      {{ cep.cidade }}
-    </a>
-    <br />
-    {{ cep.cep }}
-  </h3>
+<h2>
+  Ofertas
 
-  <p *ngIf="">Endereço: {{ cep.logradouro }}</p>
-</div>-->
+  <div *ngFor="let imovel of imoveis">
+    <p>Imovel: {{ imovel.imovel }}</p>
+    <p>Localidade :{{ imovel.cidade }}</p>
+    <p>Valor da Diaria: {{ imovel.preco }}</p>
+    <p>Disponibilidade de aluguel :{{ imovel.disponibilidade }}</p>
+    <p>Estado: {{ imovel.uf }}</p>
+    <p>Quantidade de Quartos :{{ imovel.quantQuartos }}</p>
+    <p>{{ imovel.dataInicio }}</p>
+    <p>{{ imovel.dataFim }}</p>
+    <p>////////////////////////</p>
+  </div>
+</h2>

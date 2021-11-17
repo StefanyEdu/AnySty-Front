@@ -5,7 +5,7 @@ export interface Imovel {
   preco: string;
   disponibilidade: string;
   uf: string;
-  quantquartos: string;
+  quantQuartos: string;
   dataInicio: string;
   dataFim: string;
   numPessoas: string;
@@ -18,7 +18,7 @@ export const imoveis = [
     preco: '100',
     disponibilidade: 'Dezembro a Janeiro',
     uf: 'Rio Grande do Sul',
-    quantquartos: '2',
+    quantQuartos: '2',
     dataInicio: '',
     dataFim: '',
     numPessoas: '',
@@ -30,7 +30,7 @@ export const imoveis = [
     preco: '150',
     disponibilidade: 'Dezembro a Janeiro',
     uf: 'Rio Grande do Sul',
-    quantquartos: '1',
+    quantQuartos: '1',
     dataInicio: '',
     dataFim: '',
     numPessoas: '',
@@ -42,7 +42,7 @@ export const imoveis = [
     preco: '100',
     disponibilidade: 'Dezembro a Fevereiro',
     uf: 'Rio Grande do Sul',
-    quantquartos: '3',
+    quantQuartos: '3',
     dataInicio: '',
     dataFim: '',
     numPessoas: '',
@@ -54,7 +54,7 @@ export const imoveis = [
     preco: '100',
     disponibilidade: 'Dezembro a Janeiro',
     uf: 'Santa Catarina',
-    quantquartos: '2',
+    quantQuartos: '2',
     dataInicio: '',
     dataFim: '',
     numPessoas: '',

@@ -12,8 +12,9 @@ export class ListComponent {
   imoveis : Imovel[];
 
   constructor (private hospedagemService: HospedagemService){}
-  ngOnInit(){
+  ngOnInit () :void{
 this.hospedagemService.getImoveis().subscribe((imoveis)=>this.imoveis=imoveis);
+console.warn(this.imoveis);
   }
 
 
