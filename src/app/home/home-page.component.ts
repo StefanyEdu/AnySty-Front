@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Imovel } from '../imoveis';
-import { Imovel } from './imoveis';
 
 @Component({
   selector: 'app-home-page',
@@ -11,9 +10,9 @@ import { Imovel } from './imoveis';
 export class HomePageComponent implements OnInit {
   imoveis: Imovel[] | undefined;
 
-  getImovel(oferta: string) {
-    this.router.navigate(['imoveis', Imovel]);
-  }
+ //getImovel(oferta: string) {
+   // this.router.navigate(['imoveis', Imovel]);
+  //}
 
   constructor(private router: Router) {}
 

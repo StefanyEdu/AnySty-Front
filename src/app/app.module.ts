@@ -5,9 +5,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ListComponent } from './cep-list/cep-list.component';
+import { ListComponent } from './list/list.component';
 import { HomePageComponent } from './home/home-page.component';
-import{Ofertas} from './ofertas/OfertasComponent'
+import { Ofertas } from './ofertas/OfertasComponent';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -24,9 +24,9 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     TopBarComponent,
-    CepListComponent,
+    ListComponent,
     HomePageComponent,
-    Ofertas
+    Ofertas,
   ],
   bootstrap: [AppComponent],
 })
