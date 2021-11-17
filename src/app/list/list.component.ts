@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { imoveis } from '../imoveis';
+import { HospedagemService } from '../hospedagem.service';
+import { Imovel } from '../imoveis';
+
 
 @Component({
   selector: 'app-list',
@@ -7,7 +9,13 @@ import { imoveis } from '../imoveis';
   styleUrls: ['./list.component.css'],
 })
 export class ListComponent {
-  imoveis = imoveis;
+  imoveis : Imovel[];
+
+  constructor (private hospedagemService: HospedagemService){}
+  ngOnInit(){
+this.hospedagemService.getImoveis().subscribe((imoveis)=>this.imoveis=imoveis);
+  }
+
 
   share() {
     window.alert('Cidade Cadastrado!');

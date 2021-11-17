@@ -24,7 +24,7 @@ onSubmit() :void{
   let dataFim=this.pesquisaForm.value.dataFim;
   let numPessoas=this.pesquisaForm.value.numPessoas;
 
-  this.router.navigate(['imoveis',cidadeOf,dataInicio,dataFim,numPessoas]);
+  this.router.navigate(['imoveis',cidadeOf]);
   
 }
   ngOnInit() {}
