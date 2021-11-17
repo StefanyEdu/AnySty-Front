@@ -2,12 +2,12 @@
 <h2>Hospedagem AnySty</h2>
 
 <div class="busca">
-  <form>
+  <form [formGroup]="pesquisaForm"(ngSubmit) ="onSubmit"> 
     <div class="squat">
       <label class="busca_cidade">
         Localização:<br />
         Para onde você vai?<br />
-        <input type="text" id="cidade" name="cidade" #cidade />
+        <input type="text" id="cidade" name="cidade" #cidade formControlName='cidade'/>
       </label>
     </div>
 
@@ -15,18 +15,18 @@
       <label class="busca_cidade"
         >Check-in<br />
         Quando?<br />
-        <input type="date" id="dataInicio" name="dataInicio" #dataInicio />
+        <input type="date" id="dataInicio" name="dataInicio" #dataInicio formControlName='dataInicio'/>
       </label>
     </div>
     <div class="squat">
       <label class="busca_cidade"
         >Checkout<br />
         Quando?<br />
-        <input type="date" id="dataFim" name="dataFim" #dataFim />
+        <input type="date" id="dataFim" name="dataFim" #dataFim formControlName='dataFim'/>
       </label>
     </div>
 
-    <input type="text" id="numPessoas" name="numPessoas" #numPessoas />
-    <button type="button" (click)="getCep(cep.value)">Buscar</button>
+    <input type="text" id="numPessoas" name="numPessoas" #numPessoas formControlName='numPessoas'/>
+    <button type="submit" >Buscar</button>
   </form>
 </div>

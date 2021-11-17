@@ -11,14 +11,21 @@ import{FormBuilder}from '@angular/forms';
 export class HomePageComponent implements OnInit {
   imoveis: Imovel[] | undefined;
 
- getImovel(oferta: string) {
-    this.router.navigate(['imoveis', cidadeOf]);
-  }
+ 
  
   constructor(private router: Router,
               private formBuilder: FormBuilder ) {}
 pesquisaForm=this.formBuilder.group({
   cidade:'',dataInicio:'',dataFim:'', numPessoas:''
-})
+});
+onSubmit() :void{
+  let cidadeOf=this.pesquisaForm.value.cidade;
+  let dataInicio=this.pesquisaForm.value.dataInicio;
+  let dataFim=this.pesquisaForm.value.dataFim;
+  let numPessoas=this.pesquisaForm.value.numPessoas;
+
+  this.router.navigate(['imoveis',cidadeOf,dataInicio,dataFim,numPessoas]);
+  
+}
   ngOnInit() {}
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import{HospedagemService} from '../hospedagem.service'
+import { Imovel } from '../imoveis';
 
 
 @Component({
@@ -8,9 +9,9 @@ import{HospedagemService} from '../hospedagem.service'
   templateUrl: './ofertas.component.html',
   styleUrls: ['./ofertas.component.css'],
 })
-export class Ofertas implements OnInit {
-  oferta: Ofertas[] | undefined;
-
+export class OfertasComponent implements OnInit {
+  oferta:string;
+  imoveis: Imovel[];
   constructor(
     private route: ActivatedRoute,
     private hospedagem: HospedagemService

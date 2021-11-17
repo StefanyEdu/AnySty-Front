@@ -1,25 +1,15 @@
 <h2>
   Ofertas
 
-  <div *ngIf="imoveis">
-    <h3>{{ imoveis.imovel }}</h3>
-    <h4>{{ imoveis.preco }}</h4>
-    <p>{{ imoveis.disponibilidade }}</p>
-    <p>{{ imoveis.uf }}</p>
-    <p>{{ imoveis.quantquartos }}</p>
-    <p>{{ imoveis.dataInicio }}</p>
-    <p>{{ imoveis.dataFim }}</p>
+  <div *ngfor='let imovel of imoveis'>
+    <h3>{{ imovel.imovel }}</h3>
+    <h4>{{ imovel.preco }}</h4>
+    <p>{{ imovel.disponibilidade }}</p>
+    <p>{{ imovel.uf }}</p>
+    <p>{{ imovel.quantquartos }}</p>
+    <p>{{ imovel.dataInicio }}</p>
+    <p>{{ imovel.dataFim }}</p>
   </div>
 </h2>
 
-<h2>
-  <div *ngIf="imoveis">
-    <h3>{{ imoveis.imovel }}</h3>
-    <h4>{{ imoveis.preco }}</h4>
-    <p>{{ imoveis.disponibilidade }}</p>
-    <p>{{ imoveis.uf }}</p>
-    <p>{{ imoveis.quantquartos }}</p>
-    <p>{{ imoveis.dataInicio }}</p>
-    <p>{{ imoveis.dataFim }}</p>
-  </div>
-</h2>
+

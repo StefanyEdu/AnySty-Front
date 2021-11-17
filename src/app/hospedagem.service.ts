@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class HospedagemService {
   constructor(private http: HttpClient) {}
 
-  getCep(cep: string) {
+  getImovel(imoveis: string) {
     return this.http.get<Imovel>('./imoveis.ts');
     /*return this.http.get<Cep>('https://viacep.com.br/ws/'+cep+'/json/');*/
     //return this.http.get<Cep>('https://boiling-inlet-94899.herokuapp.com/api/ceps/'+cep);

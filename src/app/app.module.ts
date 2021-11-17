@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { ListComponent } from './list/list.component';
 import { HomePageComponent } from './home/home-page.component';
-import { Ofertas } from './ofertas/ofertas.component';
+import { OfertasComponent } from './ofertas/ofertas.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -25,7 +25,7 @@ import { HttpClientModule } from '@angular/common/http';
     TopBarComponent,
     ListComponent,
     HomePageComponent,
-    Ofertas,
+    OfertasComponent,
   ],
   bootstrap: [AppComponent],
 })
