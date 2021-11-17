@@ -6,7 +6,7 @@ import { imoveis } from '../imoveis';
   templateUrl: './list.component.html',
   styleUrls: ['./list.component.css'],
 })
-export class CepListComponent {
+export class ListComponent {
   imoveis = imoveis;
 
   share() {

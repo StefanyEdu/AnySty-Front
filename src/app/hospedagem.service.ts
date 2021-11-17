@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
 @Injectable({
   providedIn: 'root',
 })
-export class ViacepService {
+export class HospedagemService {
   constructor(private http: HttpClient) {}
 
   getCep(cep: string) {

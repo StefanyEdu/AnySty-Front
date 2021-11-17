@@ -7,7 +7,7 @@
       <label class="busca_cidade">
         Localização:<br />
         Para onde você vai?<br />
-        <input type="text" id="cidade" name="cidade" #imoveis />
+        <input type="text" id="cidade" name="cidade" #cidade />
       </label>
     </div>
 
@@ -15,18 +15,18 @@
       <label class="busca_cidade"
         >Check-in<br />
         Quando?<br />
-        <input type="date" id="dataInicio" name="dataInicio" #imoveis />
+        <input type="date" id="dataInicio" name="dataInicio" #dataInicio />
       </label>
     </div>
     <div class="squat">
       <label class="busca_cidade"
         >Checkout<br />
         Quando?<br />
-        <input type="date" id="dataFim" name="dataFim" #imoveis />
+        <input type="date" id="dataFim" name="dataFim" #dataFim />
       </label>
     </div>
 
-    <input type="text" id="numPessoas" name="numPessoas" imoveis />
+    <input type="text" id="numPessoas" name="numPessoas" #numPessoas />
     <button type="button" (click)="getCep(cep.value)">Buscar</button>
   </form>
 </div>

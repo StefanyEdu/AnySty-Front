@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HospedagemService } from '../hospedagem.service';
-import { Imovel } from './imoveis';
+import{HospedagemService} from '../hospedagem.service'
+
 
 @Component({
   selector: 'app-ofertas',
   templateUrl: './ofertas.component.html',
   styleUrls: ['./ofertas.component.css'],
 })
-export class OfertasComponent implements OnInit {
-  oferta: Ofertas | undefined;
+export class Ofertas implements OnInit {
+  oferta: Ofertas[] | undefined;
 
   constructor(
     private route: ActivatedRoute,
